@@ -18,9 +18,10 @@ GO
 CREATE TABLE Movies (
     MovieID INT PRIMARY KEY,
     Title NVARCHAR(255) NOT NULL,
-    Language NVARCHAR(100),
-    Country NVARCHAR(100),
-    TotalViews INT
+	[Year] NVARCHAR(100) NOT NULL,
+    Language NVARCHAR(100) NOT NULL,
+    Country NVARCHAR(100) NOT NULL,
+    TotalViews INT NOT NULL
 );
 
 -- Create Genres Table
