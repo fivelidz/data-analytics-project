@@ -1,0 +1,5 @@
+2 Data / modelling issues you’ll want to fix first
+
+Row “ish India 61364” at bottom of Movie sample	Looks like a mis-aligned record (MovieID missing, fields shifted)	Delete or repair before loading
+Duplicate title columns (Title & Title_1)	PB I relationships break if both are kept	Keep only clean‐spelt column
+Year is float; “non_def” placeholder	DAX time functions fail	Convert to whole number, set non_def → 1995
